@@ -6,6 +6,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import {
   buildBasemapStyle,
   DEFAULT_VIEW,
+  ESRI_ATTRIBUTION,
   HANSEN_ATTRIBUTION,
   HANSEN_LOSS_TILES,
   imageryTileUrl,
@@ -38,7 +39,10 @@ export function Map() {
       style: buildBasemapStyle(initialReleaseId),
       center: DEFAULT_VIEW.center,
       zoom: DEFAULT_VIEW.zoom,
-      attributionControl: { compact: true },
+      attributionControl: {
+        compact: false,
+        customAttribution: [ESRI_ATTRIBUTION, HANSEN_ATTRIBUTION],
+      },
     });
     mapRef.current = map;
 

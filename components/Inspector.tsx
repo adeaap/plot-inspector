@@ -20,8 +20,9 @@ export function Inspector() {
           <MapControls />
         </div>
 
-        {/* Floating bottom imagery toggle */}
-        <div className="pointer-events-none absolute bottom-6 left-0 right-0 flex justify-center px-3">
+        {/* Floating bottom imagery toggle. Sits above the MapLibre attribution
+            bar (~20 px tall) so it doesn't overlap on narrow viewports. */}
+        <div className="pointer-events-none absolute bottom-12 left-0 right-0 flex justify-center px-3 md:bottom-8">
           <ImageryPicker />
         </div>
 

@@ -137,14 +137,33 @@ User enters lat/lng  →  circlePolygon()  →  Zustand store
 - Tests beyond pure helpers (the UI surface is heavy MapLibre + tRPC, and
   the value of integration tests against hardcoded data is low)
 
-## Acknowledgements
+## Attribution & data licensing
 
-- Forest-cover-loss dataset:
-  [Hansen et al., 2013](https://glad.umd.edu/dataset/global-2010-tree-cover-30-m),
-  served via [GFW](https://www.globalforestwatch.org/).
-- [MapLibre GL](https://maplibre.org/), open-source vector mapping.
-- ESRI World Imagery Wayback for time-travel basemap layers.
+This is a non-commercial portfolio demo (no ads, no subscriptions, no revenue).
+Third-party datasets and basemaps are used under the following terms:
+
+- **Forest-cover-loss raster (Hansen / GFW).** Licensed under
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Required citation:
+
+  > Hansen, M. C., P. V. Potapov, R. Moore, M. Hancher, S. A. Turubanova,
+  > A. Tyukavina, D. Thau, S. V. Stehman, S. J. Goetz, T. R. Loveland,
+  > A. Kommareddy, A. Egorov, L. Chini, C. O. Justice, and J. R. G. Townshend.
+  > 2013. "[High-Resolution Global Maps of 21st-Century Forest Cover Change](https://www.science.org/doi/10.1126/science.1244693)."
+  > *Science* 342 (15 November): 850–53.
+
+  Tiles served by [Global Forest Watch](https://www.globalforestwatch.org/),
+  subject to the [GFW Terms of Service](https://www.globalforestwatch.org/terms/).
+
+- **ESRI World Imagery / Wayback basemap.** Used under Esri's
+  [Web Site and Service Terms of Use](https://www.esri.com/en-us/legal/terms/web-site-service)
+  for non-commercial purposes. In-app attribution: *"Powered by Esri. Sources:
+  Esri, Maxar, Earthstar Geographics, and the GIS User Community."*
+
+- **[MapLibre GL JS](https://maplibre.org/)** — BSD-3-Clause, open-source
+  vector-mapping library.
 
 ## License
 
-MIT, see [LICENSE](./LICENSE).
+The application source code is MIT, see [LICENSE](./LICENSE). This license
+covers the code only — third-party datasets and basemap tiles retain their
+own licenses as listed above.

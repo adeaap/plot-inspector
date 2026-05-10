@@ -10,6 +10,9 @@ export const HANSEN_LOSS_TILES =
 export const HANSEN_ATTRIBUTION =
   '<a href="https://glad.umd.edu/dataset/global-2010-tree-cover-30-m" target="_blank" rel="noopener noreferrer">Hansen / GFW</a>';
 
+export const ESRI_ATTRIBUTION =
+  'Powered by <a href="https://www.esri.com" target="_blank" rel="noopener noreferrer">Esri</a>. Sources: Esri, Maxar, Earthstar Geographics, and the GIS User Community';
+
 const ESRI_REFERENCE =
   "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}";
 
@@ -65,8 +68,7 @@ export function buildBasemapStyle(releaseId: string): StyleSpecification {
         tiles: [imageryTileUrl(releaseId)],
         tileSize: 256,
         maxzoom: 19,
-        attribution:
-          'Imagery © <a href="https://www.esri.com" target="_blank" rel="noopener noreferrer">Esri</a> Wayback, USGS, NOAA',
+        attribution: ESRI_ATTRIBUTION,
       },
       "esri-reference": {
         type: "raster",
