@@ -1,0 +1,20 @@
+# Build output
+.next/
+out/
+build/
+next-env.d.ts
+
+# Dependencies
+node_modules/
+
+# Lockfiles & generated
+package-lock.json
+tsconfig.tsbuildinfo
+
+# Assets
+docs/
+public/
+*.geojson
+
+# Misc
+.DS_Store
